@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astra OS Desktop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Desktop -->
+  <div id="desktop">
+    <div id="desktop-bg"></div>
+    <div id="desktop-icons">
+      <div class="icon" onclick="launchApp('filemanager')">📁<span>Files</span></div>
+      <div class="icon" onclick="launchApp('videoplayer')">🎬<span>Video</span></div>
+      <div class="icon" onclick="launchApp('webbrowser')">🌐<span>Browser</span></div>
+      <div class="icon" onclick="launchApp('terminal')">🖳<span>Terminal</span></div>
+      <div class="icon" onclick="launchApp('settings')">⚙️<span>Settings</span></div>
+      <div class="icon" onclick="launchApp('taskmanager')">📊<span>TaskMgr</span></div>
+      <div class="icon" onclick="launchApp('download')">⬇️<span>Download</span></div>
+    </div>
+  </div>
+  <div id="taskbar">
+    <div id="taskbar-btns">
+      <button class="taskbar-btn" onclick="launchApp('filemanager')">📁 Files</button>
+      <button class="taskbar-btn" onclick="launchApp('webbrowser')">🌐 Browser</button>
+      <button class="taskbar-btn" onclick="launchApp('videoplayer')">🎬 Video</button>
+      <button class="taskbar-btn" onclick="launchApp('terminal')">🖳 Terminal</button>
+      <button class="taskbar-btn" onclick="launchApp('settings')">⚙️ Settings</button>
+      <button class="taskbar-btn" onclick="launchApp('taskmanager')">📊 TaskMgr</button>
+      <button class="taskbar-btn" onclick="launchApp('download')">⬇️ Download</button>
+    </div>
+    <div id="taskbar-apps"></div>
+    <span id="network-status"></span>
+    <div id="clock"></div>
+  </div>
+  <script src="main.js"></script>
+  <script src="apps/filemanager.js"></script>
+  <script src="apps/videoplayer.js"></script>
+  <script src="apps/webbrowser.js"></script>
+  <script src="apps/settings.js"></script>
+  <script src="apps/terminal.js"></script>
+  <script src="apps/taskmanager.js"></script>
+  <script src="apps/download.js"></script>
+</body>
+</html>
